@@ -34,7 +34,7 @@ type Quote struct {
 	AvgTotalVolume        int64   `json:"avgTotalVolume"`
 	IEXBidPrice           float32 `json:"iexBidPrice"`
 	IEXBidSize            int64   `json:"iexBidSize"`
-	IEAskPrice            float32 `json:"iEAskPrice"`
+	IEAskPrice            float32 `json:"iexAskPrice"`
 	IEXAskSize            int64   `json:"iexAskSize"`
 	MarketCap             int64   `json:"marketCap"`
 	PeRatio               float32 `json:"peRatio"`

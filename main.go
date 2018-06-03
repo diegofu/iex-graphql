@@ -16,7 +16,7 @@ func main() {
 
 	result := graphql.Do(graphql.Params{
 		Schema:        schema,
-		RequestString: "{chart(range: ONE_DAY, symbol: \"aapl\", date: \"\"){data{minute}}}",
+		RequestString: "{chart(range: ONE_DAY, symbol: \"aapl\", date: \"\"){data{minute}, range}}",
 	})
 
 	fmt.Printf("%v", result)

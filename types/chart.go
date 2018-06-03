@@ -1,5 +1,6 @@
 package types
 
+// Chart represents a range of time for a symbol
 type Chart struct {
 	Minute               string  `json:"minute"`
 	MarketAverage        float32 `json:"marketAverage"`
@@ -28,6 +29,7 @@ type Chart struct {
 	Vwap                 float32 `json:"vwap"`
 }
 
+// ChartDynamic is the dynamic range chart
 type ChartDynamic struct {
 	Range string  `json:"range"`
 	Data  []Chart `json:"data"`
